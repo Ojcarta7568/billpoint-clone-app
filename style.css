@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+}
+.container{
+    background-color: #f66b03;
+    height: 110vh;
+    padding-top: 1.2rem;
+}
+.navbar{
+    background-color: white;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 50rem;
+    justify-content: space-between;
+
+}
+.nav-logo{
+    padding-left: 2rem;
+}
+ nav ul{
+    display: inline-block;
+    list-style: none;
+    justify-content: center;    
+   
+    
+}
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav a:hover{
+    color: #f66b03;
+    transition: ease-in 0.2s;
+}
+.download-btn{
+    padding: 16px 60px;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 2rem;
+    background-color: white;
+    border: 1px solid #f66b03;
+    cursor: pointer;
+    
+}
+.download-btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.hero-section{
+    margin-top: 8rem;
+    margin-left: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.live-btn button{
+    padding: 20px 10px;
+    border-radius: 30px;
+    border: none;
+    padding-right: 50px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+.live-btn span{
+    background-color: #f66b03;
+    padding: 12px 20px;
+    margin-right: 20px;
+    margin-left: 0;
+    font-size: 15px;
+    color: white;
+    border-radius: 30px;
+}
+.right-col-info{
+    
+    float: right;
+    position: relative;
+    top: -3.2rem;
+    margin-right: 9rem;
+
+}
+.right-col-info img{
+    height: 35rem;
+}
+h1{
+    color: white;
+    margin-top: 2rem;
+    font-size: 2.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1::after{
+    content: url(/images/stroke.svg);
+    display: block;
+}
+.left-col p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hero-btns{
+    margin-top: 1.3rem;
+    
+}
+.hero-btns img{
+    margin-right: 10px;
+}
+
+
+
+.section-subtitle{
+    text-align: center;
+    margin-top: 4rem;
+}
+.section-subtitle h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.section-subtitle h2::before{
+    content: url(/images/million_happy_users.png);
+    position: absolute;
+    left: 59rem;
+    bottom: -17.1rem;
+}
+.section-subtitle span{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #f66b03;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* .section-subtitle span::before{
+    content: url(/images/frame.svg);
+    position: absolute;
+    height: auto;
+    w
+    left: 30rem;
+    bottom:-14rem;
+} */
+.section-subtitle p{
+    color: #000;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section-providers {
+    margin: 2rem auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.section-providers img{
+    width: 80%;
+    
+}
+
+
+
+.services-section{
+    background-color: #fef0e6;
+    padding-bottom: 3rem;
+}
+.services-info{
+    text-align: center;
+    
+}
+.services-info h3{
+    padding: 4rem 0 1.5rem 0;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.services-info p{
+    color: black;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.service-cards{
+    display: grid;
+    /* grid-template-columns: 390px 390px 390px; */
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 0 5rem;
+    gap: 2rem;
+    
+}
+.card{
+    background-color:white;
+    border: none;
+    padding: 2rem 1rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 1rem;
+    justify-content: center;
+}
+.card-icon img{
+    width: 4rem;
+    margin: 3rem 2rem 0 0;
+}
+.card-description h4{
+    margin-bottom: 0.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+.card-description p{
+    line-height: 1.4rem;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card1 .card-description p{
+    line-height: 1.5rem;
+}
+.card7 .card-description{
+    margin-top: 1.5rem;
+}
+.card7 img{
+    margin-top: 1.4rem;
+}
+.card7{
+    grid-column: span 2;
+}
+
+.steps-section{
+    display: flex;
+    margin: 6rem 5rem;
+    gap: 1rem;
+    
+}
+.steps-section img{
+    width: 90%;
+    border: 1px solid #f66b03;
+    border-radius: 50%;
+}
+.steps-info h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+}
+.steps-info span{
+    color: #f66b03;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.steps-list-1 h5{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.steps-list-1 p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000;
+}
+/* .steps-button{
+    color: #f66b03;
+    border: 1px solid #f66b03;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    position: relative;
+    left: -45px;
+    top: 35px;
+} */
+.steps-list-2 h5{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.steps-list-2 p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000;
+}
+.steps-list-3 h5{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.steps-list-3 p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000
+}
+.steps-button{
+    margin: 1rem 0 2rem 0;
+    background-color: #f66b03;
+    padding: 10px 45px 10px 25px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-reasons{
+    
+    background-color: #fef0e6;
+    padding-bottom: 3rem;
+}
+.section-reasons-info{
+    text-align: center;
+    padding-top: 4rem;
+}
+.section-reasons-info h3{
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.section-reasons-info span{
+    color: #f66b03;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section-reasons-info p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.section-reasons-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2rem 1.5rem;
+    margin: 0 5rem;
+}
+
+.section-reasons-card{
+    background-color: white;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: 3rem;
+    padding: 1.8rem;
+}
+.section-reasons-detail.detail1 p{
+    line-height: 1.3rem;
+}
+.section-reasons-card img{
+    width: 4rem;
+    margin-right: 1.5rem;
+    margin: 3rem 2rem 0 0;
+}
+.section-reasons-card h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section-reasons-card p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-info{
+    margin-top: 4rem;
+    text-align: center;
+}
+.faq-info h3{
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.faq-info span{
+    color: #f66b03;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.faq-info p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.faq-cols{
+    display: flex;
+}
+.faq-left-col{
+    background-color: #f66b03;
+    padding: 1.5rem 1.5rem;
+    width: 40%;
+    border-radius: 2rem;
+    margin: 2rem 6rem;
+    height: 100%;
+
+}
+.faq-buttons{
+    display: flex;
+    flex-direction: column;
+}
+.faq-button{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    font-weight: 600;
+    border-radius: 3rem;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f66b03;
+    border: 1px solid white
+}
+.faq-button-question{
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    color: #f66b03;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid white
+}
+.faq-button-img{
+    background-color: white;
+   padding: 6px;
+    border-radius: 40%;
+    margin-right: 15px;
+}
+.faq-button span{
+    margin-top: 0.7rem;
+}
+.faq-image{
+    margin-top: 9rem;
+    width: 600px;
+}
+
+
+.platforms{
+    background-color: #fef0e6;
+  
+}
+.platform-cols{
+    
+    display: flex;
+}
+.platforms-left-col{
+  padding: 7rem 0 1rem 6rem;
+}
+.platforms-right-col{
+    padding: 7rem 4rem 1rem 0;
+  }
+
+.platforms-left-col h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+.platforms-right-col{
+display: flex;
+}
+.platform-image img{
+    width: 350px;
+    padding-right: 1.5rem;
+
+}
+.platform-image2 img{
+    width: 150px;
+    padding-top: 5rem;
+}
+.footer{
+    background-color: #000;
+    height: 600px;
+    position: relative;
+    width: 1190px;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    margin-top: -6rem;
+    border-radius: 7rem 7rem 0 0;
+}
+.footer-items{
+    padding-top: 5rem;
+    display: flex;
+    color: white;
+}
+.footer-img img{
+    margin-left: 3.5rem;
+}
+.footer-info p{
+    color: white;
+    padding-left: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-services{
+    margin-left: 1.5rem;
+}
+.footer-services h5{
+    padding: 0 0 0.5rem 1rem;
+    font-size: 1.3rem;
+}
+.footer-services ul{
+    list-style-type: none
+}
+.footer-services li{
+    padding: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-company{
+    margin-left: 2rem;
+}
+.footer-company h5{
+    padding: 0 0 0.5rem 0.6rem;
+    font-size: 1.3rem;
+}
+.footer-company ul{
+    list-style-type: none
+}
+.footer-company li{
+    padding: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-info{
+    margin-left: 2rem;
+}
+.footer-info h5{
+    padding: 0 0 0.5rem 0.6rem;
+    font-size: 1.3rem;
+}
+.footer-info ul{
+    list-style-type: none
+}
+.footer-info li{
+    padding: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-social-media{
+    margin-left: 2rem;
+}
+.footer-social-media h5{
+    padding: 0 0 0.5rem 0.3rem;
+    font-size: 1.3rem;
+}
+.footer-social-media ul{
+    list-style-type: none
+}
+.footer-social-media li{
+    padding: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer-social-media img{
+    padding-right: 1rem;
+}
+
+.item1{
+    display: flex;
+    padding-top: 1rem;
+}
+.item2{
+    display: flex;
+    padding-top: 1rem;
+}
+.item3{
+    display: flex;
+    padding-top: 1rem;
+}
+.item4{
+    display: flex;
+    padding-top: 1rem;
+}
+.item5{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.item2 p{
+    padding-top: 0.3rem;
+}
+.item3 p{
+    padding-top: 0.2rem;
+}
+.item4 p{
+    padding-top: 0.3rem;
+}
+.item5 p{
+    padding-top: 0.3rem;
+}
+hr{
+    margin-top: 3rem;
+    opacity: 0.4;
+}
+.footer-rights{
+    color: white;
+    padding: 1rem 0 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-rights p{
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer-rights-info{
+    float: right;
+}
+.footer-rights-info ul{
+    list-style-type: none;
+    display: flex;
+}
+.footer-rights-info li{
+    padding: 0 1rem 0 0;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
